@@ -63,7 +63,7 @@ class Client {
      */
     editUserBalance(guildId, userId, { cash, bank } = {}, reason) {
         if (!guildId) throw new Error('guildId must be specified');
-        if (!userId) throw new Error('userId must be specified');
+        if (!userId) throw new Error('userId deve ser especificado');
         if (!cash && !bank) throw new Error('cash or bank must be specified');
         if (cash === Infinity) cash = 'Infinity';
         if (bank === Infinity) bank = 'Infinity';
